@@ -48,7 +48,74 @@ public class MainActivity extends AppCompatActivity {
                     int sum = number1 + number2;
 
                     //show result for addition
+                    textView.setText("");
                     textView.setText("Result: " + sum);
+                } else {
+                    textView.setText("Please enter both numbers.");
+                }
+            }
+        });
+
+        buttonMinus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                String number1Str = editText1.getText().toString();
+                String number2Str = editText2.getText().toString();
+
+                if (!number1Str.isEmpty() && !number2Str.isEmpty()) {
+                    int number1 = Integer.parseInt(number1Str);
+                    int number2 = Integer.parseInt(number2Str);
+
+                    int diff = number1 - number2;
+
+                    //show result for addition
+                    textView.setText("");
+                    textView.setText("Result: " + diff);
+                } else {
+                    textView.setText("Please enter both numbers.");
+                }
+            }
+        });
+
+        buttonMultiply.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                String number1Str = editText1.getText().toString();
+                String number2Str = editText2.getText().toString();
+
+                if (!number1Str.isEmpty() && !number2Str.isEmpty()) {
+                    int number1 = Integer.parseInt(number1Str);
+                    int number2 = Integer.parseInt(number2Str);
+
+                    int product = number1 * number2;
+
+                    //show result for addition
+                    textView.setText("");
+                    textView.setText("Result: " + product);
+                } else {
+                    textView.setText("Please enter both numbers.");
+                }
+            }
+        });
+
+        buttonDivision.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                String number1Str = editText1.getText().toString();
+                String number2Str = editText2.getText().toString();
+
+                if (!number1Str.isEmpty() && !number2Str.isEmpty()) {
+                    int number1 = Integer.parseInt(number1Str);
+                    int number2 = Integer.parseInt(number2Str);
+
+                    int division = number1 / number2;
+
+                    //show result for addition
+                    textView.setText("");
+                    textView.setText("Result: " + division);
                 } else {
                     textView.setText("Please enter both numbers.");
                 }
